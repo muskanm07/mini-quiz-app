@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  background: #fff;
+  width: 90%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#progress {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: grid;
+  gap: 12px;
+  margin-left: 485px;
+  margin-top: 60px;
+  width: 400px;
+  height: 200px;
+
+}
+
+.option-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.option-btn:hover {
+  background: #ececff;
+}
+
+.option-btn.correct {
+  background: #c8f7c5;
+  border-color: #2ecc71;
+}
+
+.option-btn.wrong {
+  background: #f7c5c5;
+  border-color: #e74c3c;
+}
+
+#next-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+#next-btn:hover {
+  background: #5563d6;
+}
+
+.hide {
+  display: none;
+}
+
+#result-box {
+  text-align: center;
+}
+
+#result-box button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #764ba2;
+  color: white;
+  cursor: pointer;
+}
